@@ -1,6 +1,6 @@
-#react-typescript
+# react-typescript
 
-#my learnings in typescript with react
+# my learnings in typescript with react
 
 # Commands
 
