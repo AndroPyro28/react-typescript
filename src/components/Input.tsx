@@ -1,8 +1,9 @@
 import React from 'react'
 
 interface InputProps {
-    value: string,
-    handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
+    value?: string,
+    handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
+
 }
 function Input(props: InputProps) {
     const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {

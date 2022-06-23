@@ -1,10 +1,6 @@
 import React from 'react';
 import PersonList from './PersonList';
-
-interface NameInterface {
-    firstname: string,
-    lastname: string
-}
+import NameInterface from "../Interfaces/NameInterface";
 
 interface GreetProps {
     name?:NameInterface,

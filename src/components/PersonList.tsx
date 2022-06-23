@@ -1,9 +1,6 @@
 import React from "react";
+import NameInterface from "../Interfaces/NameInterface";
 
-interface NameInterface {
-  firstname: string;
-  lastname: string;
-}
 
 interface PersonListProps {
   nameList: NameInterface[];
