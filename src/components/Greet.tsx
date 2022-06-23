@@ -14,8 +14,7 @@ interface GreetProps {
 
 // type props
 
-function Greet(props:GreetProps) {
-    const {name={firstname: '...', lastname: '...'}, messageCount=0, isLoggedIn} = props
+function Greet({name={firstname: '...', lastname: '...'}, messageCount=0, isLoggedIn}:GreetProps) {
 
     const nameList: NameInterface[] = [
         {
