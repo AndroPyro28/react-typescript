@@ -8,6 +8,7 @@ import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Status from "./components/Status";
 import LoggedIn from "./state/LoggedIn";
+import User from "./state/User";
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <LoggedIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      {/* <LoggedIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} /> */}
+      <User />
     </div>
   );
 }
