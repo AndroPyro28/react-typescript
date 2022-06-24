@@ -6,7 +6,8 @@ interface ThemeContextPropsInterface {
     children: ReactNode
 }
 // const ThemeContext = createContext<ThemeInterfaceOrNull>(null) 
-const ThemeContext = createContext<typeof theme>(null) // alternative of ThemeInterfaceOrNull
+
+const ThemeContext = createContext<typeof theme>(theme) // alternative of ThemeInterfaceOrNull
 
  function ThemeContextProvider ({children}:ThemeContextPropsInterface) {
     return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>

@@ -17,9 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <Box />
-      </ThemeContextProvider>
+      <Box />
     </div>
   );
 }
