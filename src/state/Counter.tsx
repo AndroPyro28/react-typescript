@@ -6,17 +6,23 @@ function Counter() {
     count: number;
   }
 
-  interface ActionInterface {
+  interface UpdateActionInterface {
     payload: number;
-    type: string;
+    type: 'incremeant' | 'decremeant' | 'reset';
   }
+
+  interface ResetActionInterface {
+    type:'reset';
+  }
+
+  type CounterAction = UpdateActionInterface | ResetActionInterface
 
   const initialState: InitialStateInterface = { count: 0 };
 
 
   const counterReducer = (
     state:InitialStateInterface,
-    action: ActionInterface
+    action:CounterAction
   ) => {
     switch (action.type) {
       case "incremeant": {
@@ -31,6 +37,10 @@ function Counter() {
         }
       }
 
+      case 'reset': {
+        return initialState
+      }
+
       default: {
         return state;
       }
@@ -42,12 +52,19 @@ function Counter() {
   return (
     <>
       Count: {state.count}
+
       <button onClick={() => countDispatch({ type: "incremeant", payload: 1 })}>
         Incremeant by 1
       </button>
+
       <button onClick={() => countDispatch({ type: "decremeant", payload: 1 })}>
         decremeant by 1
       </button>
+
+      <button onClick={() => countDispatch({ type: "reset" })}>
+        reset
+      </button>
+
     </>
   );
 }
