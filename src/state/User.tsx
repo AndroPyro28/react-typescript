@@ -6,7 +6,7 @@ interface UserInterface {
 }
 
 function User() {
-  const [user, setUser] = useState<UserInterface>({} as UserInterface);
+  const [user, setUser] = useState<UserInterface | null>(null);
 
   const handleLogin = () => {
     setUser({
@@ -15,9 +15,14 @@ function User() {
     })
   };
 
+  const handleLogout = () => {
+    setUser(null)
+  };
+
   return (
     <>
       <button onClick={handleLogin}>login</button>
+      <button onClick={handleLogout}>logout</button>
         <div>
           <h5>{user?.name}</h5>
           <h5>{user?.email}</h5>

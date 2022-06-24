@@ -10,12 +10,16 @@ import Counter from "./state/Counter"
 import Status from "./components/Status";
 import LoggedIn from "./state/LoggedIn";
 import User from "./state/User";
+import {ThemeContextProvider} from './context/ThemeContext';
+import Box from './context/Box';
 
 function App() {
 
   return (
     <div className="App">
-      <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
