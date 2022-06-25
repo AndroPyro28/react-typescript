@@ -16,6 +16,8 @@ import {ProfileProps} from "./Profile";
 //     // you pass props here in Component props because it is not sure if what props will be rendered
 // }
 
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 // use this when you pass props directly to the Component
 
 interface PrivateProps {
