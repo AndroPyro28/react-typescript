@@ -36,9 +36,9 @@ function RandomNumber({
   return (
     <div>
       {value}
-      {isPositive && "is positive number"}
-      {isNegative && "is negative number"}
-      {isZero && "is zero number"}
+      {isPositive && " is positive number"}
+      {isNegative && " is negative number"}
+      {isZero && " is zero number"}
     </div>
   );
 }
