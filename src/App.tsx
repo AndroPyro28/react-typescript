@@ -16,10 +16,41 @@ import Box from './context/Box';
 import Private from "./auth/Private";
 import { Profile } from "./auth/Profile";
 import { Routes, Route, useLocation } from "react-router-dom";
+import List from "./generics/List";
 function App() {
 
   return (
     <div className="App">
+      <List 
+        items={['andro', 'jean', 'john', 'maze']}
+        onClick={(item) => console.log(item)}
+      />
+
+      <List 
+        items={[1,2,3,4,5]}
+        onClick={(item) => console.log(item)}
+      />
+
+        <List 
+        items={[
+          {
+            id: 1,
+            firstname: 'andro',
+            lastname: 'eugenio'
+          },
+          {
+            id: 2,
+              firstname: 'jean',
+              lastname: 'correa'
+          },
+          {
+            id: 3,
+            firstname: 'john',
+            lastname: 'doe'
+          }
+      ]}
+        onClick={(item) => console.log(item)}
+      />
 
     </div>
   );

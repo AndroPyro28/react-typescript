@@ -1,8 +1,32 @@
 import React from 'react'
 
-function List() {
+interface ListProps<T>{
+  items: T[],
+  onClick: (value: T) => void
+}
+
+type ofObject = {
+  id: number
+  firstname: string,
+  lastname: string
+}
+
+function List ({items, onClick}: ListProps<string | number | ofObject >) {
   return (
-    <div>List</div>
+    <div>
+      <h2>List of items</h2>
+      {
+        items.map((item, index) => {
+          if(typeof item === "object") {
+            return <div key={item.id} onClick={() => onClick(item)}> {item.firstname} {item.lastname} </div>
+          }
+          else {
+            return <div key={index} onClick={() => onClick(item)}> {item} </div>
+          }
+          
+        })
+      }
+    </div>
   )
 }
 
