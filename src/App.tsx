@@ -20,14 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
-        {/* when passing props you have to use callback and <Profile /> */}
-        {/* but when not passing props you have to use simple Profile */}
-        
 
-        {/* <Route path="/auth" element={<Private isLoggedIn={true} Component={Profile} /> } /> */}
-        <Route path="/auth" element={<Private isLoggedIn={true} Component={() => <Profile name="andro" />} /> } />
-      </Routes>
     </div>
   );
 }
