@@ -18,12 +18,13 @@ import { Profile } from "./auth/Profile";
 import { Routes, Route, useLocation } from "react-router-dom";
 import List from "./generics/List";
 import RandomNumber from "./restriction/RandomNumber";
+import Toast from "./templateliterals/Toast";
 function App() {
   return (
     <div className="App">
-      <RandomNumber value={-1} isNegative />
-      <RandomNumber value={0} isZero />
-      <RandomNumber value={1} isPositive />
+      <Toast position='center-top' />
+      <Toast position='center' />
+      <Toast position='center-bottom' />
     </div>
   );
 }
