@@ -5,13 +5,13 @@ interface ListProps<T>{
   onClick: (value: T) => void
 }
 
-type ofObject = {
+type objectWithId = {
   id: number
   firstname: string,
   lastname: string
 }
 
-function List ({items, onClick}: ListProps<string | number | ofObject >) {
+function List ({items, onClick}: ListProps<string | number | objectWithId >) {
   return (
     <div>
       <h2>List of items</h2>
