@@ -7,6 +7,7 @@ import Heading from "./components/Heading";
 import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Counter from "./state/Counter"
+import CounterClass from "./class/Counter"
 import Status from "./components/Status";
 import LoggedIn from "./state/LoggedIn";
 import User from "./state/User";
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <CounterClass message="The count value is: " />
     </div>
   );
 }
