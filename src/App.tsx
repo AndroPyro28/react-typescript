@@ -21,14 +21,13 @@ import List from "./generics/List";
 import RandomNumber from "./restriction/RandomNumber";
 import Toast from "./templateliterals/Toast";
 import CustomComponent from "./html/CustomComponent";
+import Text from "./polymorphic/Text";
 function App() {
   return (
     <div className="App">
-     <CustomComponent
-      isLoggedIn={true}
-      name={{firstname:'', lastname:''}}
-      messageCount={0}
-     />
+     <Text size="sm" color="primary" as='h1' > Heading </Text>
+     <Text size="md" color="secondary" as="p"> paragraph </Text>
+     <Text size="lg" as="label" htmlFor="someid" > label </Text>
     </div>
   );
 }
