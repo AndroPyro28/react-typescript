@@ -1,5 +1,7 @@
 # react-typescript
 
+#before u start open the terminal and type: npm install or npm i
+
 # my learnings in typescript with react
 
 # Commands
