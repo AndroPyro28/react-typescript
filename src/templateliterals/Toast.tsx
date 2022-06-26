@@ -10,7 +10,7 @@ interface toastProps {
   //exclude<your allowedTypes, yourDisableTypes>
 }
 
-function Toast({ position }: toastProps) {
+function Toast({ position}: toastProps) {
   return <div>Toast notification position - {position} </div>;
 }
 

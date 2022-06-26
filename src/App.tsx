@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import CustomButton from "./html/Button";
 import Button from "./components/Button";
 import Container from "./components/Container";
 import Greet from "./components/Greet";
@@ -22,9 +23,11 @@ import Toast from "./templateliterals/Toast";
 function App() {
   return (
     <div className="App">
-      <Toast position='center-top' />
-      <Toast position='center' />
-      <Toast position='center-bottom' />
+     <CustomButton variant="primary"
+      onClick={() => console.log('button clicked')}
+     >
+     Primary Button
+     </CustomButton>
     </div>
   );
 }
