@@ -20,14 +20,15 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import List from "./generics/List";
 import RandomNumber from "./restriction/RandomNumber";
 import Toast from "./templateliterals/Toast";
+import CustomComponent from "./html/CustomComponent";
 function App() {
   return (
     <div className="App">
-     <CustomButton variant="primary"
-      onClick={() => console.log('button clicked')}
-     >
-     Primary Button
-     </CustomButton>
+     <CustomComponent
+      isLoggedIn={true}
+      name={{firstname:'', lastname:''}}
+      messageCount={0}
+     />
     </div>
   );
 }
