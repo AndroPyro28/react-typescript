@@ -6,7 +6,7 @@ interface UserInterface {
 }
 
 function User() {
-  const [user, setUser] = useState<UserInterface | null>({} as UserInterface );
+  const [user, setUser] = useState<UserInterface | null>(null);
 
   const handleLogin = () => {
     setUser({

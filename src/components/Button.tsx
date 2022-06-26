@@ -1,7 +1,7 @@
 import React from 'react'
 
     interface ButtonProps {
-        handleClick: (e: React.MouseEvent<HTMLButtonElement>, id:number) => void
+        handleClick: (e: React.MouseEvent, id:number) => void
     }
 
 function Button(props: ButtonProps) {
