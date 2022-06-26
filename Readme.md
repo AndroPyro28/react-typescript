@@ -11,3 +11,5 @@
 #React.ReactNode for Children props
 
 #React.ComponentType for Component props
+
+#React.ChangeEvent<HTMLInputElement> for onchange callback functions in input
