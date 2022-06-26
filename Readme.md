@@ -12,4 +12,6 @@
 
 #React.ComponentType for Component props
 
-#React.ChangeEvent<HTMLInputElement> for onchange callback functions in input
+#React.ChangeEvent<HTMLInputElement> for onchange event callback functions in input | select etc
+  
+#React.MouseEvent<HTMLButtonElement> for mouse event callback functions like click function or mouse on any element
